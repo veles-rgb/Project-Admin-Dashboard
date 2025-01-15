@@ -21,17 +21,13 @@ html {
     color: white;
 }
 
-.sidebar-top {
-
-}
+.sidebar-top {}
 
 .sidebar-middle {
     margin-bottom: 50px;
 }
 
-.sidebar-bottom {
-
-}
+.sidebar-bottom {}
 
 .header {
     background-color: white;
@@ -50,7 +46,7 @@ html {
 .header-bottom {
     display: grid;
     grid-auto-flow: column;
-        grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 input {
@@ -63,9 +59,17 @@ input {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-auto-flow: column;
     gap: 25px;
+}
+
+.content-heading {
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 25px;
+    text-align: center;
+    text-shadow: 2px 2px lightgray;
 }
 
 .content-left {
@@ -78,6 +82,7 @@ input {
     gap: 25px;
     justify-self: center;
     align-self: center;
+    padding-left: 50px;
 }
 
 .project-box {
@@ -105,8 +110,7 @@ input {
     text-wrap: wrap;
 }
 
-.project-description {
-}
+.project-description {}
 
 .icon-btns {
     display: flex;
@@ -120,12 +124,51 @@ input {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
-}
-
-.content-right-top {
+    justify-items: center;
 
 }
 
-.content-right-bottom {
+.announcements-container {
+    width: 25rem;
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px lightgray);
+}
 
+.announcements-box {
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+.announcements-title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.announcements-desc {
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+.trending-container {
+    width: 25rem;
+    margin-bottom: 25px;
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px lightgray);
+}
+
+.trending-box {
+    padding: 25px;
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-pfp {
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
 }
