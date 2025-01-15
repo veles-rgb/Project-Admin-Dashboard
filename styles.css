@@ -172,3 +172,8 @@ input {
     justify-self: center;
     align-self: center;
 }
+
+.trending-username {
+    font-weight: bolder;
+    font-size: 18px;
+}
