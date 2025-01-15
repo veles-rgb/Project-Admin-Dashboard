@@ -38,6 +38,7 @@ html {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: grid;
+    filter: drop-shadow(0px 5px 5px lightgray);
 }
 
 .header-top {
@@ -74,8 +75,9 @@ input {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     gap: 25px;
+    justify-self: center;
+    align-self: center;
 }
 
 .project-box {
@@ -85,6 +87,25 @@ input {
     border-radius: 10px;
     border-left: solid 10px orange;
     display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 5px lightgray);
+}
+
+.project-title,
+.project-description {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.project-title {
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 900;
+    text-wrap: wrap;
+}
+
+.project-description {
 }
 
 .icon-btns {
