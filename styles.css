@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+.profile-pic {
+    border-radius: 50%;
+}
+
 .container {
     height: 100%;
     display: grid;
@@ -80,17 +84,48 @@ ul {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 2fr 1fr;
+    padding: 25px;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    background-color: rgba(163, 66, 248, 0.100);
+    border: 1px solid rgb(163, 66, 248);
+    height: 2rem;
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    padding-right: 50px;
+}
+
+.header-top-right div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-top-right p {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .header-bottom {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 2fr 1fr;
-}
-
-input {
-    background-color: rgba(163, 66, 248, 0.100);
-    border: none;
+    padding: 25px;
 }
 
 .content {
@@ -109,10 +144,6 @@ input {
     padding: 25px;
     text-align: center;
     text-shadow: 2px 2px lightgray;
-}
-
-.content-left {
-
 }
 
 .projects-container {
@@ -148,8 +179,6 @@ input {
     font-weight: 900;
     text-wrap: wrap;
 }
-
-.project-description {}
 
 .icon-btns {
     display: flex;
