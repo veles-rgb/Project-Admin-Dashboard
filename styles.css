@@ -65,5 +65,13 @@ html {
 }
 
 .content-right {
-    
+    display: grid;
+}
+
+.content-right-top {
+
+}
+
+.content-right-bottom {
+
 }
