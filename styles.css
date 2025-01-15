@@ -5,6 +5,10 @@ html {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
     height: 100%;
     display: grid;
@@ -21,13 +25,48 @@ html {
     color: white;
 }
 
-.sidebar-top {}
+.sidebar-top div {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    gap: 10px;
+}
+
+.sidebar-logo {
+    filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(125deg) brightness(104%) contrast(100%);
+}
 
 .sidebar-middle {
     margin-bottom: 50px;
 }
 
+.sidebar-middle li,
+.sidebar-bottom li {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sidebar-middle li:hover,
+.sidebar-bottom li:hover {
+    cursor: pointer;
+    filter: invert(89%) sepia(0%) saturate(701%) hue-rotate(97deg) brightness(92%) contrast(86%);
+}
+
+.sidebar-middle img,
+.sidebar-bottom img {
+    filter: invert(100%) sepia(94%) saturate(1%) hue-rotate(125deg) brightness(104%) contrast(100%);
+}
+
 .sidebar-bottom {}
+
 
 .header {
     background-color: white;
@@ -162,7 +201,6 @@ input {
 
 .trending-box {
     padding: 25px;
-    border: 1px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
